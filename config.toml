@@ -1,0 +1,73 @@
+baseURL = "http://kotlin-user-group-asuncion-py.github.io"
+languageCode = "en-us"
+theme = "cupper-hugo-theme"
+title = "Asunción Kotlin User group"
+
+
+[taxonomie]
+  tag= "tags"
+
+[permalinks]
+  post= "/:filename/"
+
+[imaging]
+  quality= 99
+
+
+[params]
+  footer= "Made with [Hugo](https://gohugo.io/). Themed by [Cupper](https://github.com/zwbetz-gh/cupper-hugo-theme)"
+  # For more date formats see https://gohugo.io/functions/format/
+  dateFormat= "Jan 2, 2006"
+  katex =  "true"
+  hideHeaderLinks= "false"
+  search= true
+  customCss=["css/custom_01.css","css/custom_02.css"]
+  customJs=["js/custom_01.js","js/custom_02.js"]
+
+[menu]
+
+
+  [[menu.nav]]
+    name = "Home"
+    url = "/"
+    weight =  1
+  [[menu.nav]]
+    name = "Blog"
+    url = "/posts/"
+    weight =  2
+  [[menu.nav]]
+    name = "Tags"
+    url = "/tags/"
+    weight =  2
+
+[markup]
+  defaultMarkdownHandler = "goldmark"
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      definitionList= true
+      footnote= true
+      linkify= true
+      strikethrough= true
+      table= true
+      taskList= true
+      typographer= true
+    [markup.goldmark.parser]
+      attribute= true
+      autoHeadingID= true
+    [markup.goldmark.renderer]
+      hardWraps = false
+      unsafe = true
+      xHTML = false
+  [markaup.goldmark.highlight]
+    codeFences = false
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    style= "monokai"
+    tabWidth= 4
+  [markup.goldmark.tableOfContents]
+    endLevel= 6
+    startLevel= 2
+
