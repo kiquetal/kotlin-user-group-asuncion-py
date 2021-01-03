@@ -1,5 +1,5 @@
 baseURL = "https://kotlin-user-group-asuncion-py.github.io"
-languageCode = "en-us"
+languageCode = "es-py"
 theme = "cupper-hugo-theme"
 title = "Asunción Kotlin User group"
 
