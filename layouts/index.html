@@ -1,0 +1,20 @@
+{{ define "main" }}
+<main aria-role="main">
+    <header class="homepage-header">
+        <h1>{{.Title}}</h1>
+        {{ with .Params.subtitle }}
+        <span class="subtitle">{{.}}</span>
+        {{ end }}
+    </header>
+    <div class="homepage-content">
+        {{.Content}}
+    </div>
+    <h3>Ultimo post creado:</h3>
+    <div>
+        {{ range first 1 .Site.RegularPages }}
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>       {{ .Date.Format "2006-01-02"  }}
+
+        {{ end }}
+    </div>
+</main>
+{{ end }}
